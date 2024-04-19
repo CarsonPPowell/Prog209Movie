@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating App</title>
+    <!-- Add your CSS file here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div >
+            <form id="add-movie-form">
+                <div>
+                <label for="movie-name">Movie Name:</label>
+                <input placeholder="Movie name"type="text" id="movie-name" name="movie-name">
+                </div>
+                <div>
+                <label for="movie-rating">Movie Rating:</label>
+                <input placeholder="Movie rating" type="number" id="movie-rating" name="movie-rating" min="1" max="5">
+                </div>
+                <div>
+                <label for="movie-year">Movie Year:</label>
+                <input placeholder="Movie year" type="number" id="movie-year" name="movie-year" min="1800" max="2024">
+    
+                </div>
+                
+            </form>
+            <button id="add-movie">Add Movie</button>
+            <button id="show-movies">Show Movies</button>
+        </div>
+
+        <div id="movie-div">
+            <h2>Movie List</h2>
+            <ul id="movie-list">
+                <!-- List of movies will be displayed here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
